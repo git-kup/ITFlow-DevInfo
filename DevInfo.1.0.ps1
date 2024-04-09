@@ -134,7 +134,6 @@ $module = "/api/v1/assets/update.php"
 $uri = $PreURL + $SiteUrl + $module
 
 # Request
-# Use Invoke-WebRequest instead to see more info about the request/response
 Invoke-WebRequest -Method Post -Uri $uri -Body $body
 
 Write-host "The info of this $type has been uploaded to $SiteUrl successfully!" -ForegroundColor Green
